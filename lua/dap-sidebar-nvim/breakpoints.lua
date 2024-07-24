@@ -99,5 +99,9 @@ return {
             vim.cmd("wincmd p")
             vim.cmd("e " .. location.filepath)
         end,
+
+        ["t"] = function (line)
+          loclist:toggle_group_at(line)
+        end,
     },
 }
